@@ -1,16 +1,22 @@
-numero1 = 10
-numero2 = 15
+operacao = input("Digite a operação desejada (soma, sub, mult, div): ")
+numero1 = int(input("Digite o 1º numero: "))
+numero2 = int(input("Digite o 2º numero: "))
 
-soma = numero1 + numero2
-print("A soma dos numeros é: ", soma)
+if operacao == "soma":
+        resultado = numero1 + numero2
 
-subtracao = numero1 - numero2
-print("A subtracao dos numeros é: ", subtracao)
+elif operacao == "sub":
+        resultado = numero1 - numero2
 
-multiplicacao = numero1 * numero2
-print("A multiplicacao dos numeros é: ", multiplicacao)
+elif operacao == "mult":
+        resultado = numero1 * numero2
 
-divisao = numero1 / numero2
-print("A divisao dos numeros é: ", divisao)
+elif operacao == "div":
+        resultado = numero1 / numero2
+
+else:
+        resultado = "operação não suportada"
+
+print("O resultado da operação é: ", str(resultado))
 
 
